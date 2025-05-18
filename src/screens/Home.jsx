@@ -66,7 +66,7 @@ function Home() {
 
             {/* Footer */}
             <div className={`w-full h-fit bg-primary py-2 mt-15 flex justify-center`}>
-                <div className={`font-medium text-lg text-background space-x-1`}>
+                <div className={`font-medium text-lg text-white space-x-1`}>
                     <span>Sentifica</span>
                     <i className={`ri-copyright-line`}/>
                     <span>2025</span>
