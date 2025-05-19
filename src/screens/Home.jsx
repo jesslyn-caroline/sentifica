@@ -48,7 +48,7 @@ function Home() {
                 <h3 className={`font-normal text-md text-text`}>
                     <span className={`font-semibold text-primary`}>Sentifica</span> is built with one goal in mind — to make sentiment analysis simple, fast, and accessible for everyone.
                 </h3>
-                <div className={`grid grid-cols-1 md:grid-cols-3 space-y-3 md:space-x-3`}>
+                <div className={`grid grid-cols-1 md:grid-cols-3 space-y-3 md:space-y-0 space-x-0 md:space-x-3`}>
                     <div className={`flex flex-row items-center bg-secondary rounded-md px-4 py-2 space-x-2`}>
                         <i className={`ri-checkbox-circle-fill text-2xl text-primary`}/>
                         <span className={`text-md font-medium text-text`}>Easy to use</span>
