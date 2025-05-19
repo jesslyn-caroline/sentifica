@@ -3,8 +3,8 @@ function Home() {
         <div className={`w-full flex flex-col`}>
             
             {/* Hero Section */}
-            <div className={`w-full max-h-[1024px] h-screen px-24 py-20 flex flex-row`}>
-                <div className={`w-1/2 flex flex-col justify-center space-y-3`}>
+            <div className={`w-full md:max-h-[1024px] h-fit px-8 md:px-24 py-20 flex flex-col md:flex-row space-y-10`}>
+                <div className={`w-full md:w-1/2 flex flex-col justify-center space-y-3`}>
                     <h1 className={`text-text text-3xl font-semibold`}>
                         <span>Discover the Sentiment</span>
                         <br/>
@@ -18,13 +18,13 @@ function Home() {
                         <i className={`ri-arrow-right-line font-lg`}/>
                     </button>
                 </div>
-                <div className={`w-1/2 flex justify-end items-center`}>
-                    <img src="/images/sentiment-analysis.png" className={`w-md`}/>
+                <div className={`w-full md:w-1/2 flex justify-center md:justify-end items-center`}>
+                    <img src="/images/sentiment-analysis.png" className={`w-sm md:w-md`}/>
                 </div>
             </div>
 
             {/* About Section*/}
-            <div className={`w-full h-fit bg-secondary px-24 py-12 flex flex-col space-y-3`}>
+            <div className={`w-full h-fit bg-secondary px-8 md:px-24 py-12 flex flex-col space-y-3`}>
                 <i className={`ri-information-2-fill text-3xl text-primary`}/>
                 <h1 className={`font-semibold`}>
                     <h2 className={`text-lg text-primary`}>About Sentifica</h2>
@@ -39,7 +39,7 @@ function Home() {
             </div>
 
             {/* Why Section */}
-            <div className={`w-full px-24 py-12 flex flex-col space-y-3`}>
+            <div className={`w-full px-8 md:px-24 py-12 flex flex-col space-y-3`}>
                 <i className={`ri-question-fill text-3xl text-primary`}/>
                 <h1 className={`font-semibold`}>
                     <h2 className={`text-lg text-primary`}>Why Sentifica?</h2>
@@ -48,7 +48,7 @@ function Home() {
                 <h3 className={`font-normal text-md text-text`}>
                     <span className={`font-semibold text-primary`}>Sentifica</span> is built with one goal in mind — to make sentiment analysis simple, fast, and accessible for everyone.
                 </h3>
-                <div className={`grid grid-cols-3 space-x-3`}>
+                <div className={`grid grid-cols-1 md:grid-cols-3 space-y-3 md:space-x-3`}>
                     <div className={`flex flex-row items-center bg-secondary rounded-md px-4 py-2 space-x-2`}>
                         <i className={`ri-checkbox-circle-fill text-2xl text-primary`}/>
                         <span className={`text-md font-medium text-text`}>Easy to use</span>
