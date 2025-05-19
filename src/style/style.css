@@ -27,4 +27,5 @@
 
 * {
     font-family: "Poppins", sans-serif;
+    transition: background 0.1s;
 }
