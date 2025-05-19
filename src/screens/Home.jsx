@@ -3,7 +3,7 @@ function Home() {
         <div className={`w-full flex flex-col`}>
             
             {/* Hero Section */}
-            <div className={`w-full md:max-h-[1024px] h-fit xl:h-screen px-8 md:px-12 lg:px-24 py-20 flex flex-col md:flex-row space-y-10`}>
+            <div className={`w-full md:max-h-[1024px] h-fit lg:h-screen px-8 md:px-12 lg:px-24 py-20 flex flex-col md:flex-row space-y-10`}>
                 <div className={`w-full md:w-1/2 flex flex-col justify-center space-y-3`}>
                     <h1 className={`text-text text-3xl font-semibold`}>
                         <span>Discover the Sentiment</span>
