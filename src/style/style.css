@@ -22,6 +22,8 @@
     --color-primary: var(--prm);
     --color-secondary: var(--scd);
     --color-accent: var(--acc);   
+
+    --breakpoint-2xl: 1400px;
 }
 
 * {
