@@ -21,8 +21,7 @@
     --color-background: var(--bg);
     --color-primary: var(--prm);
     --color-secondary: var(--scd);
-    --color-accent: var(--acc);
-
+    --color-accent: var(--acc);   
 }
 
 * {
