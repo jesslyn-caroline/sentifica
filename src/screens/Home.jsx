@@ -13,13 +13,13 @@ function Home() {
                     <h2 className={`text-accent text-xl font-semibold`}>
                         Analyze Emotions. Understand Perspective.
                     </h2>
-                    <button className={`w-fit h-fit px-4 py-2 bg-primary rounded-md space-x-2 text-white text-lg font-semibold`}>
-                        <span>Try it Out!</span>
-                        <i className={`ri-arrow-right-line font-xl`}/>
+                    <button className={`w-fit h-fit px-3 py-1.5 bg-primary rounded-md space-x-2 text-white text-lg font-semibold`}>
+                        <span>Try It Out!</span>
+                        <i className={`ri-arrow-right-line font-lg`}/>
                     </button>
                 </div>
-                <div className={`w-1/2 flex justify-center items-center`}>
-                    <img src="/images/sentiment-analysis.png" className={`w-sm`}/>
+                <div className={`w-1/2 flex justify-end items-center`}>
+                    <img src="/images/sentiment-analysis.png" className={`w-md`}/>
                 </div>
             </div>
 
