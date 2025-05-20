@@ -4,16 +4,16 @@ function Home() {
             
             {/* Hero Section */}
             <div className={`w-full md:max-h-[1024px] h-fit lg:h-screen px-8 md:px-12 lg:px-24 xl:px-32 py-20 flex flex-col md:flex-row space-y-10`}>
-                <div className={`w-full md:w-1/2 flex flex-col justify-center md:mt-30 space-y-3`}>
-                    <h1 className={`text-text text-3xl 2xl:text-4xl font-semibold`}>
+                <div className={`w-full md:w-1/2 flex flex-col justify-center mt-12 md:mt-30 space-y-3`}>
+                    <h1 className={`text-text text-3xl 2xl:text-4xl font-bold`}>
                         <span>Discover the Sentiment</span>
                         <br/>
                         <span className={`text-primary`}>Behind Every Word</span>
                     </h1>
-                    <h2 className={`text-accent text-xl 2xl:text-2xl font-semibold`}>
+                    <h2 className={`text-accent text-xl 2xl:text-2xl font-bold`}>
                         Analyze Emotions. Understand Perspective.
                     </h2>
-                    <button className={`w-fit h-fit px-3 2xl:px-5 py-1.5 2xl:py-2 bg-primary rounded-md space-x-2 text-white text-lg xl:text-xl font-semibold`}>
+                    <button className={`w-fit h-fit px-3 2xl:px-5 py-1.5 2xl:py-2 bg-primary rounded-md space-x-2 text-white text-lg xl:text-xl font-bold`}>
                         <span>Try It Out!</span>
                         <i className={`ri-arrow-right-line font-lg`}/>
                     </button>
