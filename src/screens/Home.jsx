@@ -26,47 +26,47 @@ function Home() {
             {/* About Section*/}
             <div className={`w-full h-fit bg-secondary px-8 md:px-12 lg:px-24 xl:px-32 py-12 2xl:py-16 flex flex-col space-y-3`}>
                 <i className={`ri-information-2-fill text-3xl 2xl:text-4xl text-primary`}/>
-                <h1 className={`font-semibold`}>
+                <h1 className={`font-bold`}>
                     <h2 className={`text-lg 2xl:text-xl text-primary`}>About Sentifica</h2>
                     <h2 className={`text-2xl 2xl:text-3xl text-text`}>Understanding Feelings through Words</h2>
                 </h1>
-                <h3 className={`font-normal text-md 2xl:text-lg text-text`}>
-                    <span className={`font-semibold text-primary`}>Sentifica</span> helps you explore the emotions behind everyday words. Using simple Machine Learning model, it classifies texts
+                <h3 className={`font-medium text-md 2xl:text-lg text-text`}>
+                    <span className={`font-bold text-primary`}>Sentifica</span> helps you explore the emotions behind everyday words. Using simple Machine Learning model, it classifies texts
                     into positive, neutral, or negative sentiments - quickly and easily. 
                     <br/>
-                    Whether you’re just curious or experimenting with text analysis, <span className={`font-semibold text-primary`}>Sentifica</span> is here to make it simple and accessible.
+                    Whether you’re just curious or experimenting with text analysis, <span className={`font-bold text-primary`}>Sentifica</span> is here to make it simple and accessible.
                 </h3>
             </div>
 
             {/* Why Section */}
             <div className={`w-full px-8 md:px-12 lg:px-24 xl:px-32 py-12 2xl:py-16 flex flex-col space-y-3`}>
                 <i className={`ri-question-fill text-3xl 2xl:text-4xl text-primary`}/>
-                <h1 className={`font-semibold`}>
+                <h1 className={`font-bold`}>
                     <h2 className={`text-lg 2xl:text-xl text-primary`}>Why Sentifica?</h2>
                     <h2 className={`text-2xl 2xl:text-3xl text-text`}>Your Text, Understood Instantly</h2>
                 </h1>
-                <h3 className={`font-normal text-md 2xl:text-lg text-text`}>
-                    <span className={`font-semibold text-primary`}>Sentifica</span> is built with one goal in mind — to make sentiment analysis simple, fast, and accessible for everyone.
+                <h3 className={`font-medium text-md 2xl:text-lg text-text`}>
+                    <span className={`font-bold text-primary`}>Sentifica</span> is built with one goal in mind — to make sentiment analysis simple, fast, and accessible for everyone.
                 </h3>
                 <div className={`grid grid-cols-1 md:grid-cols-3 space-y-3 md:space-y-0 space-x-0 md:space-x-3`}>
                     <div className={`flex flex-row items-center bg-secondary rounded-md px-4 py-2 space-x-2`}>
                         <i className={`ri-checkbox-circle-fill text-2xl 2xl:text-3xl text-primary`}/>
-                        <span className={`text-md 2xl:text-lg font-medium text-text`}>Easy to use</span>
+                        <span className={`text-md 2xl:text-lg font-semibold text-text`}>Easy to use</span>
                     </div>
                     <div className={`flex flex-row items-center bg-secondary rounded-md px-4 py-2 space-x-2`}>
                         <i className={`ri-money-dollar-box-fill text-2xl 2xl:text-3xl text-primary`}/>
-                        <span className={`text-md 2xl:text-lg font-medium text-text`}>Free</span>
+                        <span className={`text-md 2xl:text-lg font-semibold text-text`}>Free</span>
                     </div>
                     <div className={`flex flex-row items-center bg-secondary rounded-md px-4 py-2 space-x-2`}>
                         <i className={`ri-login-box-fill text-2xl 2xl:text-3xl text-primary`}/>
-                        <span className={`text-md 2xl:text-lg font-medium text-text`}>No Login</span>
+                        <span className={`text-md 2xl:text-lg font-semibold text-text`}>No Login</span>
                     </div>
                 </div>
             </div>
 
             {/* Footer */}
             <div className={`w-full h-fit bg-primary py-2 mt-15 flex justify-center`}>
-                <div className={`font-medium text-lg text-white space-x-1`}>
+                <div className={`font-semibold text-lg text-white space-x-1`}>
                     <span>Sentifica</span>
                     <i className={`ri-copyright-line`}/>
                     <span>2025</span>
