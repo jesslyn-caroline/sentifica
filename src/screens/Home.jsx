@@ -19,7 +19,7 @@ function Home() {
                     </button>
                 </div>
                 <div className={`w-full md:w-1/2 flex justify-center md:justify-end items-center`}>
-                    <img src="/images/sentiment-analysis.png" className={`w-sm md:w-md xl:w-lg`}/>
+                    <img src="/images/sentiment-analysis.png" className={`w-sm md:w-md`}/>
                 </div>
             </div>
 
