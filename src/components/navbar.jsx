@@ -1,7 +1,16 @@
 import { useState } from "react"
 
 function Navbar() {
-    const [theme, setTheme] = useState("light")
+    const [theme, setTheme] = useState(() => {
+        let currentTheme = JSON.parse(localStorage.getItem("theme")) || "light"
+
+        const html = document.documentElement
+        html.setAttribute("data-theme", currentTheme)
+
+        return currentTheme
+    })
+
+    
 
     function toggleTheme() {
         const html = document.documentElement
@@ -10,10 +19,12 @@ function Navbar() {
         if (currentTheme ==="light") {
             html.setAttribute("data-theme", "dark")
             setTheme("dark")
+            localStorage.setItem("theme", JSON.stringify("dark"))
         }
         else {
             html.setAttribute("data-theme", "light")
             setTheme("light")
+            localStorage.setItem("theme", JSON.stringify("light"))
         }
     }
 
