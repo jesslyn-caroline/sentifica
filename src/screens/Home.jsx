@@ -4,7 +4,7 @@ function Home() {
             
             {/* Hero Section */}
             <div className={`w-full md:max-h-[1024px] h-fit lg:h-screen px-8 md:px-12 lg:px-24 xl:px-32 py-20 flex flex-col md:flex-row space-y-10`}>
-                <div className={`w-full md:w-1/2 flex flex-col justify-center mt-12 md:mt-30 space-y-3`}>
+                <div className={`w-full md:w-1/2 flex flex-col justify-center mt-8 md:mt-30 space-y-3`}>
                     <h1 className={`text-text text-3xl 2xl:text-4xl font-bold`}>
                         <span>Discover the Sentiment</span>
                         <br/>
