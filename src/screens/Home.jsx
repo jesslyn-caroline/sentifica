@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Home() {
     return (
         <div className={`w-full flex flex-col`}>
@@ -13,10 +15,10 @@ function Home() {
                     <h2 className={`text-accent text-lg 2xl:text-2xl font-bold`}>
                         Analyze Emotions. Understand Perspective.
                     </h2>
-                    <button className={`w-fit h-fit px-3 2xl:px-5 py-1.5 2xl:py-2 bg-primary rounded-md space-x-2 text-white text-md xl:text-xl font-bold`}>
+                    <Link to="/analyze" className={`w-fit h-fit px-3 2xl:px-5 py-1.5 2xl:py-2 bg-primary rounded-md space-x-2 text-white text-md xl:text-xl font-bold cursor-pointer`}>
                         <span>Try It Out!</span>
                         <i className={`ri-arrow-right-line`}/>
-                    </button>
+                    </Link>
                 </div>
                 <div className={`w-full md:w-1/2 flex justify-center md:justify-end items-center`}>
                     <img src="/images/sentiment-analysis.png" className={`w-sm md:w-md`}/>
