@@ -10,12 +10,12 @@ function Home() {
                         <br/>
                         <span className={`text-primary`}>Behind Every Word</span>
                     </h1>
-                    <h2 className={`text-accent text-xl 2xl:text-2xl font-bold`}>
+                    <h2 className={`text-accent text-lg 2xl:text-2xl font-bold`}>
                         Analyze Emotions. Understand Perspective.
                     </h2>
-                    <button className={`w-fit h-fit px-3 2xl:px-5 py-1.5 2xl:py-2 bg-primary rounded-md space-x-2 text-white text-lg xl:text-xl font-bold`}>
+                    <button className={`w-fit h-fit px-3 2xl:px-5 py-1.5 2xl:py-2 bg-primary rounded-md space-x-2 text-white text-md xl:text-xl font-bold`}>
                         <span>Try It Out!</span>
-                        <i className={`ri-arrow-right-line font-lg`}/>
+                        <i className={`ri-arrow-right-line`}/>
                     </button>
                 </div>
                 <div className={`w-full md:w-1/2 flex justify-center md:justify-end items-center`}>
