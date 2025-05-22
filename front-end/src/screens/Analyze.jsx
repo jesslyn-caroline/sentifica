@@ -1,12 +1,26 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
+import axios from "axios"
 
 function Analyze () {
 
-    const [value, setValue] = useState('')
+    const [text, setText] = useState('')
+
+    const [sentiment, setSentiment] = useState(null)
 
     function handleValueChange(event) {
-        setValue(event.target.value)
+        setText(event.target.value)
+    }
+
+    async function analyze() {
+        try {
+            const response = await axios.post("http://127.0.0.1:8000/api/predict", {text})
+            setSentiment(response.data.sentiment)
+            console.log(sentiment)
+        }
+        catch (err) {
+            console.log(err)
+        } 
     }
 
     return (
@@ -21,12 +35,21 @@ function Analyze () {
                 <h2 className={`text-lg 2xl:text-xl text-text font-bold`}>Type your text here, and let us analyze!</h2>
                 <textarea className={`w-full text-text resize-none border border-2 border-accent rounded-md p-3`} rows={5} onChange={handleValueChange}></textarea>
                 <div className={`flex justify-end`}>
-                    <button className={`w-fit h-fit px-3 2xl:px-5 py-1.5 2xl:py-2 bg-primary rounded-md space-x-2 text-white text-md xl:text-xl font-bold cursor-pointer`}>
+                    <button className={`w-fit h-fit px-3 2xl:px-5 py-1.5 2xl:py-2 bg-primary rounded-md space-x-2 text-white text-md xl:text-xl font-bold cursor-pointer`} onClick={analyze}>
                         <span>Analyze</span>
                         <i className={`ri-magic-fill`}/>
                     </button>
                 </div>
             </div>
+
+            {
+                sentiment === null?
+                <></> :
+                <div>
+                    <img src={`/images/${sentiment}.png`}/>
+                </div>      
+            }
+            
         </div>
     )
 }
