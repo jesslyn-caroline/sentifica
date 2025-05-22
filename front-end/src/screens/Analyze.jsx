@@ -14,7 +14,7 @@ function Analyze () {
 
     async function analyze() {
         try {
-            const response = await axios.post("https://web-production-b826d.up.railway.app//api/predict", {text})
+            const response = await axios.post("https://sentifica-production.up.railway.app/analyze", {text})
             setSentiment(response.data.sentiment)
             console.log(sentiment)
         }
