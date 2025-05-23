@@ -45,7 +45,7 @@ function Analyze () {
             {
                 sentiment === null?
                 <></> :
-                <h3 className={`text-lg 2xl:text-xl text-text font-bold`}>Result ${sentiment}</h3>  
+                <h3 className={`text-lg 2xl:text-xl text-text font-bold`}>Result {sentiment}</h3>  
             }
             
         </div>
