@@ -6,7 +6,7 @@ function Analyze () {
 
     const [text, setText] = useState('')
 
-    const [sentiment, setSentiment] = useState(null)
+    const [sentiment, setSentiment] = useState('')
 
     function handleValueChange(event) {
         setText(event.target.value)
