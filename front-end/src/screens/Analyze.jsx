@@ -46,7 +46,7 @@ function Analyze () {
                 sentiment === null?
                 <></> :
                 <div>
-                    <img src={`/images/${sentiment}.png`}/>
+                    <img src={`images/${sentiment}.png`}/>
                 </div>      
             }
             
