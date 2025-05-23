@@ -45,9 +45,7 @@ function Analyze () {
             {
                 sentiment === null?
                 <></> :
-                <div>
-                    <img src={`images/${sentiment}.png`}/>
-                </div>      
+                <h3 className={`text-lg 2xl:text-xl text-text font-bold`}>Result ${sentiment}</h3>  
             }
             
         </div>
