@@ -42,13 +42,13 @@ function Analyze () {
                 </div>
             </div>
 
-            {
+{/*             {
                 sentiment === null?
                 <></> :
                 <div>
                     <img src={`images/${sentiment}.png`}/>
                 </div>      
-            }
+            } */}
             
         </div>
     )
