@@ -8,20 +8,20 @@ function Analyze () {
 
     const [sentiment, setSentiment] = useState(null)
 
-    // function handleValueChange(event) {
-    //     setText(event.target.value)
-    // }
+    function handleValueChange(event) {
+        setText(event.target.value)
+    }
 
-    // async function analyze() {
-    //     try {
-    //         const response = await axios.post("https://sentifica-production.up.railway.app/api/predict", {text})
-    //         setSentiment(response.data.sentiment)
-    //         console.log(sentiment)
-    //     }
-    //     catch (err) {
-    //         console.log(err)
-    //     } 
-    // }
+    async function analyze() {
+        try {
+            const response = await axios.post("https://sentifica-production.up.railway.app/api/predict", {text})
+            setSentiment(response.data.sentiment)
+            console.log(sentiment)
+        }
+        catch (err) {
+            console.log(err)
+        } 
+    }
 
     return (
         <div className={`w-full md:max-h-[1024px] h-fit lg:h-screen px-8 md:px-12 lg:px-24 xl:px-32 py-20 flex flex-col items-center`}>
@@ -42,13 +42,13 @@ function Analyze () {
                 </div>
             </div>
 
-{/*             {
+            {
                 sentiment === null?
                 <></> :
                 <div>
                     <img src={`images/${sentiment}.png`}/>
                 </div>      
-            } */}
+            }
             
         </div>
     )
