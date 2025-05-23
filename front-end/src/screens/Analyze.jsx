@@ -40,14 +40,11 @@ function Analyze () {
                         <i className={`ri-magic-fill`}/>
                     </button>
                 </div>
+                
+                <span className={`mt-8 flex justify-center text-lg 2xl:text-xl text-text font-semibold`}>
+                    {sentiment === '' ? '' : `Result: ${sentiment}`}
+                </span>
             </div>
-
-            {
-                sentiment === null?
-                <></> :
-                <h3 className={`text-lg 2xl:text-xl text-text font-bold`}>Result {sentiment}</h3>  
-            }
-            
         </div>
     )
 }
